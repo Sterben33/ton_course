@@ -2,9 +2,8 @@ pragma ton-solidity >= 0.35.0;
 pragma AbiHeader expire;
 
 
-contract Multiplication {
-
-    uint public mult = 1;
+contract Queue {
+    string[] public queue;
 
     constructor() public {
         require(tvm.pubkey() != 0, 101);
@@ -17,9 +16,15 @@ contract Multiplication {
         tvm.accept();
         _;
     }
-    
-    function multiply(uint multiplier) public checkOwnerAndAccept {
-        require(multiplier >= 1 && multiplier <= 10, 103);
-        mult *= multiplier;
+
+    function add(string name) public checkOwnerAndAccept {
+        queue.push(name);
+    }
+
+    function pop()  public checkOwnerAndAccept {
+        for (uint256 i = 0; i < queue.length - 1; i++) {
+            queue[i] = queue[i+1];
+        }
+        queue.pop();
     }
 }
