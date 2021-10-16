@@ -31,9 +31,9 @@ contract TaskList {
         _;
     }
 
-    function getTaskCount() public checkOwnerAndAccept returns(uint8 count){
+    function getOpenTaskCount() public checkOwnerAndAccept returns(uint8 count){
         for (uint8 i = 0; i < usedKeys.length; i++) {
-            if(usedKeys[i] == true) {
+            if(usedKeys[i] == true && taskList[i].done == false) {
                 count++;
             }
         }

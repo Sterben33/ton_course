@@ -11,7 +11,7 @@
 			]
 		},
 		{
-			"name": "getTaskCount",
+			"name": "getOpenTaskCount",
 			"inputs": [
 			],
 			"outputs": [
