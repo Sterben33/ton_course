@@ -1,0 +1,84 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addUnit",
+			"inputs": [
+				{"name":"_unitAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "removeUnit",
+			"inputs": [
+				{"name":"_unitAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"_gameObject","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "recieveAttack",
+			"inputs": [
+				{"name":"damage","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "destroyFromBaseStation",
+			"inputs": [
+				{"name":"killer","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addrToGameObject",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"addrToGameObject","type":"map(address,address)"}
+			]
+		},
+		{
+			"name": "units",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"units","type":"address[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"healthPoints","type":"uint256"},
+		{"name":"defence","type":"uint256"},
+		{"name":"power","type":"uint256"},
+		{"name":"addrToGameObject","type":"map(address,address)"},
+		{"name":"units","type":"address[]"}
+	]
+}

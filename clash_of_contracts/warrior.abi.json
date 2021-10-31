@@ -1,0 +1,53 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"_base","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "destroyFromBaseStation",
+			"inputs": [
+				{"name":"killer","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"_gameObject","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "recieveAttack",
+			"inputs": [
+				{"name":"damage","type":"uint256"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"healthPoints","type":"uint256"},
+		{"name":"defence","type":"uint256"},
+		{"name":"power","type":"uint256"},
+		{"name":"base","type":"address"},
+		{"name":"baseAddr","type":"address"}
+	]
+}
