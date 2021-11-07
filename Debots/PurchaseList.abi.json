@@ -1,0 +1,60 @@
+{
+	"ABI version": 2,
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"pubkey","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addToList",
+			"inputs": [
+				{"name":"title","type":"bytes"},
+				{"name":"_count","type":"uint64"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "buy",
+			"inputs": [
+				{"name":"id","type":"uint32"},
+				{"name":"_totalPriceForAll","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deletePurchase",
+			"inputs": [
+				{"name":"id","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getPurchaseList",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"id","type":"uint32"},{"name":"title","type":"bytes"},{"name":"count","type":"uint64"},{"name":"createdAt","type":"uint64"},{"name":"isBought","type":"bool"},{"name":"totalPriceForAll","type":"uint256"}],"name":"purchaseList","type":"tuple[]"}
+			]
+		},
+		{
+			"name": "getStat",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"paidCount","type":"uint32"},{"name":"unpaidCount","type":"uint32"},{"name":"totalSum","type":"uint256"}],"name":"summary","type":"tuple"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}

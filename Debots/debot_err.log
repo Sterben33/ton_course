@@ -1,0 +1,5 @@
+11:15:46 [ERROR] Create run message failed: Invalid name: fetch
+11:15:50 [ERROR] Create run message failed: Invalid name: fetch
+11:16:33 [ERROR] ResultOfSendMessage { shard_block_id: "268c227a84ed71ea9072e2095a1ca2c545a06f5024e3e819b79411d7a7dc6ace", sending_endpoints: ["https://net5.ton.dev", "https://net1.ton.dev"] }
+11:17:34 [ERROR] ResultOfSendMessage { shard_block_id: "9ec4141c3813c30a0a14fdee4b933b01ef06c48e4d03d6e18de7d0229b4f4bdd", sending_endpoints: ["https://net1.ton.dev", "https://net5.ton.dev"] }
+11:17:56 [ERROR] ResultOfSendMessage { shard_block_id: "83fdb6e3f719831bb14e02c7e1c5607f41da6177000c37032283193aea410cc6", sending_endpoints: ["https://net5.ton.dev", "https://net1.ton.dev"] }
